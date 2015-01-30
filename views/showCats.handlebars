@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div class="page-header">
+        <h1>Your Kitties <small>aren't they great?</small></h1>
+    </div>
+    <ul class="list-group", style = "padding-bottom: 18px">
+    {{#each cats}}
+        <h1 style="text-indent: 10px"> <small> {{this.name}} </small> </h1>
+        <ul>
+            <li class="list-group-item"> Age: {{this.age}}</li>
+            <li class="list-group-item", style="color:{{this.color}}"> Color: {{this.color}}</li>
+        </ul>
+    {{/each}}
+    </ul>
+</div>
